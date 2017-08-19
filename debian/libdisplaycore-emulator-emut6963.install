@@ -1,0 +1,3 @@
+EmuT6963.cpp libraries/DisplayCore/EmuT6963
+EmuT6963.h libraries/DisplayCore/EmuT6963
+examples/ libraries/DisplayCore/EmuT6963

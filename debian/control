@@ -1,0 +1,19 @@
+Source: libdisplaycore-emulator-emut6963
+Section: libraries
+Priority: extra
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: libdisplaycore-emulator-emut6963
+Section: libraries
+Architecture: all
+XBSC-Group: DisplayCore
+XBSC-Subgroup: Emulators
+Depends: libdisplaycore-core
+Provides: EmuT6963.h
+Description: EmuT6963 library
+ Emulate a T6963 LCD screen over PMP
+
+
+
