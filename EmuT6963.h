@@ -29,7 +29,7 @@ class EmuT6963 : public Image {
         void setRotation(uint8_t __attribute__((unused)) r) {}
         void displayOn() {}
         void displayOff() {}
-        void invertDisplay(boolean __attribute__((unused)) i) {}
+        void invertDisplay(bool __attribute__((unused)) i) {}
         
         color_t colorAt(int x, int y);
 
