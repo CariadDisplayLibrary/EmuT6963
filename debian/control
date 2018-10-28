@@ -12,7 +12,7 @@ XBSC-Group: DisplayCore
 XBSC-Subgroup: Emulators
 Depends: libdisplaycore-core
 Provides: EmuT6963.h
-Description: EmuT6963 library
+Description: EmuT6963
  Emulate a T6963 LCD screen over PMP
 
 
