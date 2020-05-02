@@ -164,7 +164,7 @@ color_t EmuT6963::colorAt(int x, int y) {
     return ((_buffer[offset] & (0x80 >> bit)) != 0) ? Color::White : Color::Black;
 }
 
-void EmuT6963::draw(DisplayCore *dev, int x, int y) {
+void EmuT6963::draw(Cariad *dev, int x, int y) {
     dev->openWindow(x, y, _width, _height);
     for (int py = 0; py < _height; py++) {
         for (int px = 0; px < _width; px++) {
@@ -174,15 +174,15 @@ void EmuT6963::draw(DisplayCore *dev, int x, int y) {
     dev->closeWindow();
 }
 
-void EmuT6963::draw(DisplayCore *dev, int x, int y, color_t __attribute__((unused)) t) {
+void EmuT6963::draw(Cariad *dev, int x, int y, color_t __attribute__((unused)) t) {
     draw(dev, x, y);
 }
 
-void EmuT6963::drawTransformed(DisplayCore *dev, int x, int y, int __attribute__((unused)) transform) {
+void EmuT6963::drawTransformed(Cariad *dev, int x, int y, int __attribute__((unused)) transform) {
     draw(dev, x, y);
 }
 
-void EmuT6963::drawTransformed(DisplayCore *dev, int x, int y, int __attribute__((unused)) transform, color_t __attribute__((unused)) t) {
+void EmuT6963::drawTransformed(Cariad *dev, int x, int y, int __attribute__((unused)) transform, color_t __attribute__((unused)) t) {
     draw(dev, x, y);
 }
 

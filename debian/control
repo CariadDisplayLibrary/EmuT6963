@@ -1,16 +1,17 @@
-Source: libdisplaycore-emulator-emut6963
+Source: libcariad-emulator-emut6963
 Section: main
 Priority: extra
 Maintainer: Matt Jenkins <matt@majenko.co.uk>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
 
-Package: libdisplaycore-emulator-emut6963
+Package: libcariad-emulator-emut6963
+Replaces: libdisplaycore-emulator-emut6963
 Section: main
 Architecture: all
-XBSC-Group: DisplayCore
+XBSC-Group: Cariad
 XBSC-Subgroup: Emulators
-Depends: libdisplaycore-core
+Depends: libcariad-core
 Provides: EmuT6963.h
 Description: EmuT6963
  Emulate a T6963 LCD screen over PMP
